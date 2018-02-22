@@ -7,7 +7,7 @@ You need to add 2 breakpoints to the lab using media queries. One for a tablet (
 * The tablet version will have a 2-column layout. The resume headings will be placed above each section in the resume.
 * The mobile version will completely hide Jenna’s photo, focusing on just the information displayed in the resume.
 
-## HSome other notes: ##
+## Some other notes: ##
 
 * Place both breakpoints at the bottom of your CSS file.
 * You want the site to be responsive at other widths outside of the set breakpoints, so be sure to modify any fixed-widths that are preventing the site from being mobile.
