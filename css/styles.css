@@ -1,0 +1,96 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+p {
+  margin: 0 0 1em;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap:wrap;
+}
+.picture, .resume {
+  padding: 3.125rem;
+}
+.picture {
+  width:40%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images_opt/profile-1600_large_2x.jpg");
+  background-size: cover;
+  background-position: center top;
+  filter: brightness(90%);
+}
+.intro {
+  width: 75%;
+  margin: 55% auto 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+.intro em {
+  color: #3ee6bf;
+  font-style: normal;
+  position: relative;
+  font-weight: 700;
+}
+.resume {
+  width:60%;
+  background-color: #fff;
+  font-family: Hind, sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.818;
+  overflow-y: scroll;
+}
+.part {
+  width: 100%;
+  margin-top: 3em;
+  clear: both;
+  overflow: hidden;
+  display: flex;
+  flex-wrap:wrap;
+}
+.part:first-child {
+  margin-top: 0;
+}
+.sidebar {
+  width: 20%;
+}
+.main {
+  width: 80%;
+  padding-right: 25%;
+}
+.tag {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(43, 93, 240);
+}
+
+@media screen and (max-width: 490px) {
+  .resume{
+    width:100%;
+  }
+  .picture{
+    display: none;
+  }
+  .sidebar, .main{
+    width:100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .sidebar, .main{
+    width:100%;
+  }
+}
